@@ -1,274 +1,1005 @@
-[
-  {
-    "Sr.": 1,
-    "Name": "Test-First Gate",
-    "Exact Quote": "Don’t write a line of new code unless you first have a failing automated test.",
-    "Intent": "Let need (a failing test) drive production code; prevent speculative implementation under pressure.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 2,
-    "Name": "Eliminate Duplication",
-    "Exact Quote": "Eliminate duplication.",
-    "Intent": "Continuously remove duplication so the design stays flexible and change-friendly.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 3,
-    "Name": "Organic Design via Feedback",
-    "Exact Quote": "You must design organically, with running code providing feedback between decisions",
-    "Intent": "Let small, running increments steer design; avoid big up-front design commitments made under uncertainty.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 4,
-    "Name": "Developer-Owned Tests",
-    "Exact Quote": "You must write your own tests, since you can’t wait twenty times a day for someone else to write a test",
-    "Intent": "Keep feedback loops in the developer’s hands so cadence doesn’t break under delivery pressure.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 5,
-    "Name": "High Cohesion, Loose Coupling",
-    "Exact Quote": "Your designs must consist of many highly cohesive, loosely coupled components, just to make testing easy",
-    "Intent": "Shape design so small parts are testable and changeable; resist entanglement that slows teams later.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 6,
-    "Name": "Red: Write a Failing Test",
-    "Exact Quote": "Red—write a little test that doesn’t work, perhaps doesn’t even compile at first",
-    "Intent": "Make the next learning step explicit; keep scope tiny and observable.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 7,
-    "Name": "Green: Make It Work Quickly",
-    "Exact Quote": "Green—make the test work quickly, committing whatever sins necessary in the process",
-    "Intent": "Prioritize a working state fast; postpone elegance until the refactor step.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 8,
-    "Name": "Refactor: Remove the Duplication You Created",
-    "Exact Quote": "Refactor—eliminate all the duplication created in just getting the test to work",
-    "Intent": "Pay back design debt immediately so speed doesn’t collapse later.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 9,
-    "Name": "Five-Step Rhythm",
-    "Exact Quote": "1. Quickly add a test",
-    "Intent": "Keep a repeatable micro-routine that prevents drifting into large, untested changes.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 10,
-    "Name": "Run Tests to See the New One Fail",
-    "Exact Quote": "2. Run all tests and see the new one fail",
-    "Intent": "Confirm the test can fail for the right reason; avoid false confidence.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 11,
-    "Name": "Change in Tiny Doses",
-    "Exact Quote": "3. Make a little change",
-    "Intent": "Reduce risk by making the smallest production change that moves toward green.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 12,
-    "Name": "Run Tests to See Everything Succeed",
-    "Exact Quote": "4. Run all tests and see them all succeed",
-    "Intent": "Return to a known-good state before expanding scope or adding more behavior.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 13,
-    "Name": "Refactor Before Moving On",
-    "Exact Quote": "5. Refactor to remove duplication",
-    "Intent": "Make cleanup a required step, not “extra time if we have it.”",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 14,
-    "Name": "Small Increments per Test",
-    "Exact Quote": "How each test can cover a small increment of functionality",
-    "Intent": "Keep each test narrowly focused so progress continues even when time is short.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 15,
-    "Name": "Ugly Changes Are Acceptable (Temporarily)",
-    "Exact Quote": "How small and ugly the changes can be to make the new tests run",
-    "Intent": "Optimize for feedback first; rely on refactoring to restore structure.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 16,
-    "Name": "Run Tests Very Often",
-    "Exact Quote": "How often the tests are run",
-    "Intent": "Sustain confidence and pace by keeping the feedback loop tight.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 17,
-    "Name": "Many Tiny Refactor Steps",
-    "Exact Quote": "How many teensy tiny steps make up the refactorings",
-    "Intent": "Prefer frequent, small refactors over rare “big cleanups” that get postponed under deadlines.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 18,
-    "Name": "Start Small",
-    "Exact Quote": "Start small or not at all.",
-    "Intent": "Lower the activation energy; start with the simplest case to avoid stalling or overbuilding.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 19,
-    "Name": "Design the Best API First",
-    "Exact Quote": "When we write a test, we imagine the perfect interface for our operation.",
-    "Intent": "Use tests to shape the public interface from the user’s perspective, before committing internals.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 20,
-    "Name": "Tests as an Outside-In Story",
-    "Exact Quote": "We are telling ourselves a story about how the operation will look from the outside.",
-    "Intent": "Keep focus on observable behavior and usage, not internal mechanisms.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 21,
-    "Name": "No Human Judgment in Results",
-    "Exact Quote": "every bit of human judgment has to be taken out of the evaluation of the results.",
-    "Intent": "Make tests unambiguous so teams don’t rationalize failures under pressure.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 22,
-    "Name": "Assert Specifically",
-    "Exact Quote": "Be specific--assertNotNull(result) can be satisfied by almost any code.",
-    "Intent": "Prevent weak tests that “go green” without pinning down behavior.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 23,
-    "Name": "Fake It to Regain Motion",
-    "Exact Quote": "I write the first test, I make it work some ugly way",
-    "Intent": "Allow temporary hard-coding to restore progress, then tighten with more tests and refactoring.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 24,
-    "Name": "Eliminate Test↔Code Duplication",
-    "Exact Quote": "There is duplication between the test and the code.",
-    "Intent": "Treat duplicated knowledge across tests and code as coupling; remove it to keep changes cheap.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 25,
-    "Name": "Triangulate: Abstract Only with Multiple Examples",
-    "Exact Quote": "Only abstract when you have two or more examples.",
-    "Intent": "Avoid premature generalization; let repeated evidence force abstraction.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 26,
-    "Name": "TDD Manages Fear",
-    "Exact Quote": "Test-driven development (TDD) is a way of managing fear during programming.",
-    "Intent": "Use fast feedback to keep risk and anxiety from driving big-bang decisions.",
-    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
-    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
-  },
-  {
-    "Sr.": 27,
-    "Name": "Nano-Cycle Granularity",
-    "Exact Quote": "The three laws are the nano-cycle of TDD.",
-    "Intent": "Keep work at near line-by-line scale so “just a bit more code” doesn’t balloon under deadlines.",
-    "Source with Author name": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
-    "URL": "https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html"
-  },
-  {
-    "Sr.": 28,
-    "Name": "3 Laws: Failing Test First",
-    "Exact Quote": "You must write a failing test before you write any production code.",
-    "Intent": "Force demand-driven coding; prevent speculative implementation when time feels tight.",
-    "Source with Author name": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
-    "URL": "https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html"
-  },
-  {
-    "Sr.": 29,
-    "Name": "3 Laws: Minimal Test",
-    "Exact Quote": "You must not write more of a test than is sufficient to fail, or fail to compile.",
-    "Intent": "Avoid over-specifying behavior early; keep the next step small and focused.",
-    "Source with Author name": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
-    "URL": "https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html"
-  },
-  {
-    "Sr.": 30,
-    "Name": "3 Laws: Minimal Production Code",
-    "Exact Quote": "You must not write more production code than is sufficient to make the currently failing test pass.",
-    "Intent": "Prevent “extra” implementation that becomes brittle and expensive to maintain.",
-    "Source with Author name": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
-    "URL": "https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html"
-  },
-  {
-    "Sr.": 31,
-    "Name": "Micro-Cycle: Fail → Pass → Clean",
-    "Exact Quote": "Clean up the mess you just made.",
-    "Intent": "Treat cleanup as part of the cycle so structure doesn’t degrade when delivery pressure rises.",
-    "Source with Author name": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
-    "URL": "https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html"
-  },
-  {
-    "Sr.": 32,
-    "Name": "Refactor Continuously (Not Later)",
-    "Exact Quote": "Refactoring is a continuous in-process activity, not something that is done late (and therefore optionally).",
-    "Intent": "Block the common failure mode: postponing refactoring until it never happens.",
-    "Source with Author name": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
-    "URL": "https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html"
-  },
-  {
-    "Sr.": 33,
-    "Name": "FIRST: Test Quality Constraints",
-    "Exact Quote": "Tests should be Fast, Independent, Repeatable, Self-Validating, and Timely.",
-    "Intent": "Make the test suite runnable and trustworthy enough that teams keep using it under time pressure.",
-    "Source with Author name": "Robert C. Martin — Clean Code (excerpted/quoted)",
-    "URL": "https://docs.miva.com/code-standards/topics/clean-code/"
-  },
-  {
-    "Sr.": 34,
-    "Name": "Test Code Is First-Class",
-    "Exact Quote": "Test code is just as important as production code.",
-    "Intent": "Keep tests maintainable so they don’t become a drag and get skipped during delivery crunches.",
-    "Source with Author name": "Robert C. Martin — quoted in Tyler Hawkins (Better Programming, Medium)",
-    "URL": "https://medium.com/better-programming/clean-code-with-unit-tests-5f28020828a5"
-  }
-]
+{
+  "manifesto_version": "1.0.0",
+  "description": "Pure TDD principles translated to AI-native, machine-actionable governance rules (derived from early Beck and Martin TDD literature).",
+  "last_updated": "2026-02-17T00:00:00Z",
+  "principles": [
+    {
+      "id": "tdd.test_first_gate",
+      "title": "Test-First Gate",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Let need (a failing test) drive production code; prevent speculative implementation under pressure.",
+      "ai_native_interpretation": "Human impracticality: Writing tests first feels slower because it front-loads thinking and blocks 'just code it' impulses. AI cost shift: AI can draft tests rapidly, explore edge cases, and validate failure on prior code automatically. Governance: Require a RED artifact (failing test evidence) before production diffs are accepted.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Introduce or modify a test that fails on the pre-change code state before adding production behavior",
+          "enforcement_hint": "Engine records a RED checkpoint by running tests against the previous revision"
+        },
+        {
+          "type": "must_not",
+          "description": "Accept a production-only change that introduces new behavior without a corresponding failing test",
+          "enforcement_hint": "Reject patches where non-test diffs add new branches/paths without new/updated tests"
+        }
+      ],
+      "prompt_guidance": "Honor 'Test-First Gate' as defined by the canonical quote: Don’t write a line of new code unless you first have a failing automated test.",
+      "applicability": [
+        "unit-tests",
+        "test-first",
+        "red"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.eliminate_duplication",
+      "title": "Eliminate Duplication",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Continuously remove duplication so the design stays flexible and change-friendly.",
+      "ai_native_interpretation": "Human impracticality: Refactoring and de-duplication get deprioritized under deadlines because benefits are delayed and invisible. AI cost shift: AI can refactor with exhaustive regression and search, reducing the opportunity cost of cleanup. Governance: Gate on duplication metrics and require extraction when thresholds are exceeded.",
+      "constraints": [
+        {
+          "type": "should",
+          "description": "Keep duplication below a configured threshold in the changed code",
+          "enforcement_hint": "Run duplication detector on the diff; block or require waiver when exceeded"
+        }
+      ],
+      "prompt_guidance": "Honor 'Eliminate Duplication' as defined by the canonical quote: Eliminate duplication.",
+      "applicability": [
+        "refactor"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        },
+        {
+          "name": "Copy-Paste Proliferation",
+          "description": "Duplicating logic instead of extracting shared intent",
+          "detection_hint": "Near-duplicate blocks detected across changed files"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.organic_design_via_feedback",
+      "title": "Organic Design via Feedback",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Let small, running increments steer design; avoid big up-front design commitments made under uncertainty.",
+      "ai_native_interpretation": "Human impracticality: Humans stop running tests frequently when feedback is slow or context switching is costly. AI cost shift: AI can run checks continuously and in parallel, making frequent feedback near-zero marginal cost. Governance: Gate on mandatory CI per patch and feedback-latency SLOs.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Run relevant tests on every patch/iteration and record results",
+          "enforcement_hint": "Pre-merge gate requires a test run artifact for each patch"
+        }
+      ],
+      "prompt_guidance": "Honor 'Organic Design via Feedback' as defined by the canonical quote: You must design organically, with running code providing feedback between decisions",
+      "applicability": [
+        "feedback-loop"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        },
+        {
+          "name": "Feedback Skipping",
+          "description": "Batching many edits before running tests/checks",
+          "detection_hint": "Multiple patches without recorded test run artifacts"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.developer_owned_tests",
+      "title": "Developer-Owned Tests",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Keep feedback loops in the developer’s hands so cadence doesn’t break under delivery pressure.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor 'Developer-Owned Tests' as defined by the canonical quote: You must write your own tests, since you can’t wait twenty times a day for someone else to write a test",
+      "applicability": [
+        "unit-tests"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.high_cohesion_loose_coupling",
+      "title": "High Cohesion, Loose Coupling",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Shape design so small parts are testable and changeable; resist entanglement that slows teams later.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor 'High Cohesion, Loose Coupling' as defined by the canonical quote: Your designs must consist of many highly cohesive, loosely coupled components, just to make testing easy",
+      "applicability": [
+        "tdd"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.red_write_a_failing_test",
+      "title": "Red: Write a Failing Test",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Make the next learning step explicit; keep scope tiny and observable.",
+      "ai_native_interpretation": "Human impracticality: Writing tests first feels slower because it front-loads thinking and blocks 'just code it' impulses. AI cost shift: AI can draft tests rapidly, explore edge cases, and validate failure on prior code automatically. Governance: Require a RED artifact (failing test evidence) before production diffs are accepted.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Maintain explicit phase ordering: RED → GREEN → REFACTOR",
+          "enforcement_hint": "Require phase metadata and verify fail→pass checkpoints in CI"
+        }
+      ],
+      "prompt_guidance": "Honor 'Red: Write a Failing Test' as defined by the canonical quote: Red—write a little test that doesn’t work, perhaps doesn’t even compile at first",
+      "applicability": [
+        "unit-tests",
+        "red-green"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.green_make_it_work_quickly",
+      "title": "Green: Make It Work Quickly",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Prioritize a working state fast; postpone elegance until the refactor step.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Enforce phase discipline with workflow rules and fail→pass checkpoints.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Maintain explicit phase ordering: RED → GREEN → REFACTOR",
+          "enforcement_hint": "Require phase metadata and verify fail→pass checkpoints in CI"
+        }
+      ],
+      "prompt_guidance": "Honor 'Green: Make It Work Quickly' as defined by the canonical quote: Green—make the test work quickly, committing whatever sins necessary in the process",
+      "applicability": [
+        "red-green"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.refactor_remove_the_duplication_you_created",
+      "title": "Refactor: Remove the Duplication You Created",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Pay back design debt immediately so speed doesn’t collapse later.",
+      "ai_native_interpretation": "Human impracticality: Refactoring and de-duplication get deprioritized under deadlines because benefits are delayed and invisible. AI cost shift: AI can refactor with exhaustive regression and search, reducing the opportunity cost of cleanup. Governance: Enforce phase discipline with workflow rules and fail→pass checkpoints.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Maintain explicit phase ordering: RED → GREEN → REFACTOR",
+          "enforcement_hint": "Require phase metadata and verify fail→pass checkpoints in CI"
+        },
+        {
+          "type": "should",
+          "description": "Keep duplication below a configured threshold in the changed code",
+          "enforcement_hint": "Run duplication detector on the diff; block or require waiver when exceeded"
+        },
+        {
+          "type": "must",
+          "description": "All refactors must keep the full test suite green",
+          "enforcement_hint": "CI blocks merge on any failure; refactor-only diffs must show unchanged contract tests"
+        }
+      ],
+      "prompt_guidance": "Honor 'Refactor: Remove the Duplication You Created' as defined by the canonical quote: Refactor—eliminate all the duplication created in just getting the test to work",
+      "applicability": [
+        "red-green",
+        "refactor"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        },
+        {
+          "name": "Behavior-Changing Refactor",
+          "description": "Refactoring that silently alters externally observable behavior",
+          "detection_hint": "Contract tests change, or consumer simulations show different outputs"
+        },
+        {
+          "name": "Copy-Paste Proliferation",
+          "description": "Duplicating logic instead of extracting shared intent",
+          "detection_hint": "Near-duplicate blocks detected across changed files"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.five_step_rhythm",
+      "title": "Five-Step Rhythm",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Keep a repeatable micro-routine that prevents drifting into large, untested changes.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Enforce phase discipline with workflow rules and fail→pass checkpoints.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Maintain explicit phase ordering: RED → GREEN → REFACTOR",
+          "enforcement_hint": "Require phase metadata and verify fail→pass checkpoints in CI"
+        }
+      ],
+      "prompt_guidance": "Honor 'Five-Step Rhythm' as defined by the canonical quote: 1. Quickly add a test",
+      "applicability": [
+        "red-green"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.run_tests_to_see_the_new_one_fail",
+      "title": "Run Tests to See the New One Fail",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Confirm the test can fail for the right reason; avoid false confidence.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor 'Run Tests to See the New One Fail' as defined by the canonical quote: 2. Run all tests and see the new one fail",
+      "applicability": [
+        "unit-tests"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.change_in_tiny_doses",
+      "title": "Change in Tiny Doses",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Reduce risk by making the smallest production change that moves toward green.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor 'Change in Tiny Doses' as defined by the canonical quote: 3. Make a little change",
+      "applicability": [
+        "tdd"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.run_tests_to_see_everything_succeed",
+      "title": "Run Tests to See Everything Succeed",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Return to a known-good state before expanding scope or adding more behavior.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor 'Run Tests to See Everything Succeed' as defined by the canonical quote: 4. Run all tests and see them all succeed",
+      "applicability": [
+        "unit-tests"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.refactor_before_moving_on",
+      "title": "Refactor Before Moving On",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Make cleanup a required step, not “extra time if we have it.”",
+      "ai_native_interpretation": "Human impracticality: Refactoring and de-duplication get deprioritized under deadlines because benefits are delayed and invisible. AI cost shift: AI can refactor with exhaustive regression and search, reducing the opportunity cost of cleanup. Governance: Enforce phase discipline with workflow rules and fail→pass checkpoints.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Maintain explicit phase ordering: RED → GREEN → REFACTOR",
+          "enforcement_hint": "Require phase metadata and verify fail→pass checkpoints in CI"
+        },
+        {
+          "type": "must",
+          "description": "All refactors must keep the full test suite green",
+          "enforcement_hint": "CI blocks merge on any failure; refactor-only diffs must show unchanged contract tests"
+        }
+      ],
+      "prompt_guidance": "Honor 'Refactor Before Moving On' as defined by the canonical quote: 5. Refactor to remove duplication",
+      "applicability": [
+        "red-green",
+        "refactor"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        },
+        {
+          "name": "Behavior-Changing Refactor",
+          "description": "Refactoring that silently alters externally observable behavior",
+          "detection_hint": "Contract tests change, or consumer simulations show different outputs"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.small_increments_per_test",
+      "title": "Small Increments per Test",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Keep each test narrowly focused so progress continues even when time is short.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor 'Small Increments per Test' as defined by the canonical quote: How each test can cover a small increment of functionality",
+      "applicability": [
+        "unit-tests"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.ugly_changes_are_acceptable_temporarily",
+      "title": "Ugly Changes Are Acceptable (Temporarily)",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Optimize for feedback first; rely on refactoring to restore structure.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor 'Ugly Changes Are Acceptable (Temporarily)' as defined by the canonical quote: How small and ugly the changes can be to make the new tests run",
+      "applicability": [
+        "tdd"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.run_tests_very_often",
+      "title": "Run Tests Very Often",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Sustain confidence and pace by keeping the feedback loop tight.",
+      "ai_native_interpretation": "Human impracticality: Humans stop running tests frequently when feedback is slow or context switching is costly. AI cost shift: AI can run checks continuously and in parallel, making frequent feedback near-zero marginal cost. Governance: Gate on mandatory CI per patch and feedback-latency SLOs.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Run relevant tests on every patch/iteration and record results",
+          "enforcement_hint": "Pre-merge gate requires a test run artifact for each patch"
+        }
+      ],
+      "prompt_guidance": "Honor 'Run Tests Very Often' as defined by the canonical quote: How often the tests are run",
+      "applicability": [
+        "unit-tests",
+        "feedback-loop"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        },
+        {
+          "name": "Feedback Skipping",
+          "description": "Batching many edits before running tests/checks",
+          "detection_hint": "Multiple patches without recorded test run artifacts"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.many_tiny_refactor_steps",
+      "title": "Many Tiny Refactor Steps",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Prefer frequent, small refactors over rare “big cleanups” that get postponed under deadlines.",
+      "ai_native_interpretation": "Human impracticality: Refactoring and de-duplication get deprioritized under deadlines because benefits are delayed and invisible. AI cost shift: AI can refactor with exhaustive regression and search, reducing the opportunity cost of cleanup. Governance: Enforce phase discipline with workflow rules and fail→pass checkpoints.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Maintain explicit phase ordering: RED → GREEN → REFACTOR",
+          "enforcement_hint": "Require phase metadata and verify fail→pass checkpoints in CI"
+        },
+        {
+          "type": "must",
+          "description": "All refactors must keep the full test suite green",
+          "enforcement_hint": "CI blocks merge on any failure; refactor-only diffs must show unchanged contract tests"
+        }
+      ],
+      "prompt_guidance": "Honor 'Many Tiny Refactor Steps' as defined by the canonical quote: How many teensy tiny steps make up the refactorings",
+      "applicability": [
+        "red-green",
+        "refactor"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        },
+        {
+          "name": "Behavior-Changing Refactor",
+          "description": "Refactoring that silently alters externally observable behavior",
+          "detection_hint": "Contract tests change, or consumer simulations show different outputs"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.start_small",
+      "title": "Start Small",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Lower the activation energy; start with the simplest case to avoid stalling or overbuilding.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor 'Start Small' as defined by the canonical quote: Start small or not at all.",
+      "applicability": [
+        "tdd"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.design_the_best_api_first",
+      "title": "Design the Best API First",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Use tests to shape the public interface from the user’s perspective, before committing internals.",
+      "ai_native_interpretation": "Human impracticality: Outside-in API design requires deliberate thought that teams skip when shipping quickly. AI cost shift: AI can generate consumer-style contract tests quickly, lowering the cost of outside-in design. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "should",
+          "description": "Behavior must be specified via caller-facing contract tests before internal design changes",
+          "enforcement_hint": "Require tests to exercise public API surface; flag tests that reach into internals"
+        }
+      ],
+      "prompt_guidance": "Honor 'Design the Best API First' as defined by the canonical quote: When we write a test, we imagine the perfect interface for our operation.",
+      "applicability": [
+        "test-first",
+        "red",
+        "outside-in"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.tests_as_an_outside_in_story",
+      "title": "Tests as an Outside-In Story",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Keep focus on observable behavior and usage, not internal mechanisms.",
+      "ai_native_interpretation": "Human impracticality: Outside-in API design requires deliberate thought that teams skip when shipping quickly. AI cost shift: AI can generate consumer-style contract tests quickly, lowering the cost of outside-in design. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "should",
+          "description": "Behavior must be specified via caller-facing contract tests before internal design changes",
+          "enforcement_hint": "Require tests to exercise public API surface; flag tests that reach into internals"
+        }
+      ],
+      "prompt_guidance": "Honor 'Tests as an Outside-In Story' as defined by the canonical quote: We are telling ourselves a story about how the operation will look from the outside.",
+      "applicability": [
+        "unit-tests",
+        "outside-in"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.no_human_judgment_in_results",
+      "title": "No Human Judgment in Results",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Make tests unambiguous so teams don’t rationalize failures under pressure.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor 'No Human Judgment in Results' as defined by the canonical quote: every bit of human judgment has to be taken out of the evaluation of the results.",
+      "applicability": [
+        "tdd"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.assert_specifically",
+      "title": "Assert Specifically",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Prevent weak tests that “go green” without pinning down behavior.",
+      "ai_native_interpretation": "Human impracticality: Weak assertions save time short-term but undermine confidence; humans accept them when rushed. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Gate on assertion presence and mutation-score thresholds.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Each test case must contain at least one meaningful assertion or approved matcher",
+          "enforcement_hint": "Static analysis checks assertion presence and blocks placeholder tests"
+        }
+      ],
+      "prompt_guidance": "Honor 'Assert Specifically' as defined by the canonical quote: Be specific--assertNotNull(result) can be satisfied by almost any code.",
+      "applicability": [
+        "tdd"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        },
+        {
+          "name": "Empty Test Shell",
+          "description": "Creating tests without meaningful assertions",
+          "detection_hint": "Test bodies contain no assertions or only trivial non-null checks"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.fake_it_to_regain_motion",
+      "title": "Fake It to Regain Motion",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Allow temporary hard-coding to restore progress, then tighten with more tests and refactoring.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor 'Fake It to Regain Motion' as defined by the canonical quote: I write the first test, I make it work some ugly way",
+      "applicability": [
+        "tdd"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.eliminate_test_code_duplication",
+      "title": "Eliminate Test↔Code Duplication",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Treat duplicated knowledge across tests and code as coupling; remove it to keep changes cheap.",
+      "ai_native_interpretation": "Human impracticality: Refactoring and de-duplication get deprioritized under deadlines because benefits are delayed and invisible. AI cost shift: AI can refactor with exhaustive regression and search, reducing the opportunity cost of cleanup. Governance: Gate on duplication metrics and require extraction when thresholds are exceeded.",
+      "constraints": [
+        {
+          "type": "should",
+          "description": "Keep duplication below a configured threshold in the changed code",
+          "enforcement_hint": "Run duplication detector on the diff; block or require waiver when exceeded"
+        }
+      ],
+      "prompt_guidance": "Honor 'Eliminate Test↔Code Duplication' as defined by the canonical quote: There is duplication between the test and the code.",
+      "applicability": [
+        "unit-tests",
+        "refactor"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        },
+        {
+          "name": "Copy-Paste Proliferation",
+          "description": "Duplicating logic instead of extracting shared intent",
+          "detection_hint": "Near-duplicate blocks detected across changed files"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.triangulate_abstract_only_with_multiple_examples",
+      "title": "Triangulate: Abstract Only with Multiple Examples",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Avoid premature generalization; let repeated evidence force abstraction.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor 'Triangulate: Abstract Only with Multiple Examples' as defined by the canonical quote: Only abstract when you have two or more examples.",
+      "applicability": [
+        "tdd"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.tdd_manages_fear",
+      "title": "TDD Manages Fear",
+      "source": "Kent Beck — Test-Driven Development by Example",
+      "intent": "Use fast feedback to keep risk and anxiety from driving big-bang decisions.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor 'TDD Manages Fear' as defined by the canonical quote: Test-driven development (TDD) is a way of managing fear during programming.",
+      "applicability": [
+        "tdd"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.nano_cycle_granularity",
+      "title": "Nano-Cycle Granularity",
+      "source": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
+      "intent": "Keep work at near line-by-line scale so “just a bit more code” doesn’t balloon under deadlines.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Enforce phase discipline with workflow rules and fail→pass checkpoints.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Maintain explicit phase ordering: RED → GREEN → REFACTOR",
+          "enforcement_hint": "Require phase metadata and verify fail→pass checkpoints in CI"
+        }
+      ],
+      "prompt_guidance": "Honor 'Nano-Cycle Granularity' as defined by the canonical quote: The three laws are the nano-cycle of TDD.",
+      "applicability": [
+        "red-green"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.3_laws_failing_test_first",
+      "title": "3 Laws: Failing Test First",
+      "source": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
+      "intent": "Force demand-driven coding; prevent speculative implementation when time feels tight.",
+      "ai_native_interpretation": "Human impracticality: Writing tests first feels slower because it front-loads thinking and blocks 'just code it' impulses. AI cost shift: AI can draft tests rapidly, explore edge cases, and validate failure on prior code automatically. Governance: Require a RED artifact (failing test evidence) before production diffs are accepted.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Introduce or modify a test that fails on the pre-change code state before adding production behavior",
+          "enforcement_hint": "Engine records a RED checkpoint by running tests against the previous revision"
+        },
+        {
+          "type": "must_not",
+          "description": "Accept a production-only change that introduces new behavior without a corresponding failing test",
+          "enforcement_hint": "Reject patches where non-test diffs add new branches/paths without new/updated tests"
+        }
+      ],
+      "prompt_guidance": "Honor '3 Laws: Failing Test First' as defined by the canonical quote: You must write a failing test before you write any production code.",
+      "applicability": [
+        "unit-tests",
+        "test-first",
+        "red"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.3_laws_minimal_test",
+      "title": "3 Laws: Minimal Test",
+      "source": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
+      "intent": "Avoid over-specifying behavior early; keep the next step small and focused.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor '3 Laws: Minimal Test' as defined by the canonical quote: You must not write more of a test than is sufficient to fail, or fail to compile.",
+      "applicability": [
+        "unit-tests"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.3_laws_minimal_production_code",
+      "title": "3 Laws: Minimal Production Code",
+      "source": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
+      "intent": "Prevent “extra” implementation that becomes brittle and expensive to maintain.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor '3 Laws: Minimal Production Code' as defined by the canonical quote: You must not write more production code than is sufficient to make the currently failing test pass.",
+      "applicability": [
+        "tdd"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.micro_cycle_fail_pass_clean",
+      "title": "Micro-Cycle: Fail → Pass → Clean",
+      "source": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
+      "intent": "Treat cleanup as part of the cycle so structure doesn’t degrade when delivery pressure rises.",
+      "ai_native_interpretation": "Human impracticality: Refactoring and de-duplication get deprioritized under deadlines because benefits are delayed and invisible. AI cost shift: AI can refactor with exhaustive regression and search, reducing the opportunity cost of cleanup. Governance: Enforce phase discipline with workflow rules and fail→pass checkpoints.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Maintain explicit phase ordering: RED → GREEN → REFACTOR",
+          "enforcement_hint": "Require phase metadata and verify fail→pass checkpoints in CI"
+        },
+        {
+          "type": "must",
+          "description": "All refactors must keep the full test suite green",
+          "enforcement_hint": "CI blocks merge on any failure; refactor-only diffs must show unchanged contract tests"
+        }
+      ],
+      "prompt_guidance": "Honor 'Micro-Cycle: Fail → Pass → Clean' as defined by the canonical quote: Clean up the mess you just made.",
+      "applicability": [
+        "red-green",
+        "refactor"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        },
+        {
+          "name": "Behavior-Changing Refactor",
+          "description": "Refactoring that silently alters externally observable behavior",
+          "detection_hint": "Contract tests change, or consumer simulations show different outputs"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.refactor_continuously_not_later",
+      "title": "Refactor Continuously (Not Later)",
+      "source": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
+      "intent": "Block the common failure mode: postponing refactoring until it never happens.",
+      "ai_native_interpretation": "Human impracticality: Refactoring and de-duplication get deprioritized under deadlines because benefits are delayed and invisible. AI cost shift: AI can refactor with exhaustive regression and search, reducing the opportunity cost of cleanup. Governance: Enforce phase discipline with workflow rules and fail→pass checkpoints.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Maintain explicit phase ordering: RED → GREEN → REFACTOR",
+          "enforcement_hint": "Require phase metadata and verify fail→pass checkpoints in CI"
+        },
+        {
+          "type": "must",
+          "description": "All refactors must keep the full test suite green",
+          "enforcement_hint": "CI blocks merge on any failure; refactor-only diffs must show unchanged contract tests"
+        }
+      ],
+      "prompt_guidance": "Honor 'Refactor Continuously (Not Later)' as defined by the canonical quote: Refactoring is a continuous in-process activity, not something that is done late (and therefore optionally).",
+      "applicability": [
+        "red-green",
+        "refactor"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        },
+        {
+          "name": "Behavior-Changing Refactor",
+          "description": "Refactoring that silently alters externally observable behavior",
+          "detection_hint": "Contract tests change, or consumer simulations show different outputs"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.first_test_quality_constraints",
+      "title": "FIRST: Test Quality Constraints",
+      "source": "Robert C. Martin — Clean Code (excerpted/quoted)",
+      "intent": "Make the test suite runnable and trustworthy enough that teams keep using it under time pressure.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor 'FIRST: Test Quality Constraints' as defined by the canonical quote: Tests should be Fast, Independent, Repeatable, Self-Validating, and Timely.",
+      "applicability": [
+        "unit-tests",
+        "test-first",
+        "red"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "tdd.test_code_is_first_class",
+      "title": "Test Code Is First-Class",
+      "source": "Robert C. Martin — quoted in Tyler Hawkins (Better Programming, Medium)",
+      "intent": "Keep tests maintainable so they don’t become a drag and get skipped during delivery crunches.",
+      "ai_native_interpretation": "Human impracticality: Humans drift toward larger steps and shortcuts because attention and time are scarce. AI cost shift: AI can iterate in tiny steps with automated verification after each patch. Governance: Turn the principle into a pass/fail policy gate rather than relying on willpower.",
+      "constraints": [
+        {
+          "type": "must",
+          "description": "Demonstrate the principle via a verifiable CI check for each change",
+          "enforcement_hint": "Add or reference a policy rule that yields a pass/fail signal"
+        }
+      ],
+      "prompt_guidance": "Honor 'Test Code Is First-Class' as defined by the canonical quote: Test code is just as important as production code.",
+      "applicability": [
+        "unit-tests",
+        "test-first",
+        "red"
+      ],
+      "anti_patterns": [
+        {
+          "name": "Speculative Implementation",
+          "description": "Adding production behavior without a test that fails on the pre-change state",
+          "detection_hint": "New production paths added without a corresponding new/updated failing test"
+        }
+      ],
+      "version": "1.0.0"
+    }
+  ]
+}
