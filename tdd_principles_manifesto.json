@@ -1,6 +1,6 @@
 {
   "manifesto_version": "1.0.0",
-  "description": "Pure TDD principles translated to AI-native, machine-actionable governance rules (derived from early Beck and Martin TDD literature).",
+  "description": "TDD principles translated to AI-native, machine-actionable governance rules (derived from early Beck and Martin TDD literature).",
   "last_updated": "2026-02-17T00:00:00Z",
   "principles": [
     {
