@@ -1,0 +1,274 @@
+[
+  {
+    "Sr.": 1,
+    "Name": "Test-First Gate",
+    "Exact Quote": "Don’t write a line of new code unless you first have a failing automated test.",
+    "Intent": "Let need (a failing test) drive production code; prevent speculative implementation under pressure.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 2,
+    "Name": "Eliminate Duplication",
+    "Exact Quote": "Eliminate duplication.",
+    "Intent": "Continuously remove duplication so the design stays flexible and change-friendly.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 3,
+    "Name": "Organic Design via Feedback",
+    "Exact Quote": "You must design organically, with running code providing feedback between decisions",
+    "Intent": "Let small, running increments steer design; avoid big up-front design commitments made under uncertainty.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 4,
+    "Name": "Developer-Owned Tests",
+    "Exact Quote": "You must write your own tests, since you can’t wait twenty times a day for someone else to write a test",
+    "Intent": "Keep feedback loops in the developer’s hands so cadence doesn’t break under delivery pressure.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 5,
+    "Name": "High Cohesion, Loose Coupling",
+    "Exact Quote": "Your designs must consist of many highly cohesive, loosely coupled components, just to make testing easy",
+    "Intent": "Shape design so small parts are testable and changeable; resist entanglement that slows teams later.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 6,
+    "Name": "Red: Write a Failing Test",
+    "Exact Quote": "Red—write a little test that doesn’t work, perhaps doesn’t even compile at first",
+    "Intent": "Make the next learning step explicit; keep scope tiny and observable.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 7,
+    "Name": "Green: Make It Work Quickly",
+    "Exact Quote": "Green—make the test work quickly, committing whatever sins necessary in the process",
+    "Intent": "Prioritize a working state fast; postpone elegance until the refactor step.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 8,
+    "Name": "Refactor: Remove the Duplication You Created",
+    "Exact Quote": "Refactor—eliminate all the duplication created in just getting the test to work",
+    "Intent": "Pay back design debt immediately so speed doesn’t collapse later.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 9,
+    "Name": "Five-Step Rhythm",
+    "Exact Quote": "1. Quickly add a test",
+    "Intent": "Keep a repeatable micro-routine that prevents drifting into large, untested changes.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 10,
+    "Name": "Run Tests to See the New One Fail",
+    "Exact Quote": "2. Run all tests and see the new one fail",
+    "Intent": "Confirm the test can fail for the right reason; avoid false confidence.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 11,
+    "Name": "Change in Tiny Doses",
+    "Exact Quote": "3. Make a little change",
+    "Intent": "Reduce risk by making the smallest production change that moves toward green.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 12,
+    "Name": "Run Tests to See Everything Succeed",
+    "Exact Quote": "4. Run all tests and see them all succeed",
+    "Intent": "Return to a known-good state before expanding scope or adding more behavior.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 13,
+    "Name": "Refactor Before Moving On",
+    "Exact Quote": "5. Refactor to remove duplication",
+    "Intent": "Make cleanup a required step, not “extra time if we have it.”",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 14,
+    "Name": "Small Increments per Test",
+    "Exact Quote": "How each test can cover a small increment of functionality",
+    "Intent": "Keep each test narrowly focused so progress continues even when time is short.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 15,
+    "Name": "Ugly Changes Are Acceptable (Temporarily)",
+    "Exact Quote": "How small and ugly the changes can be to make the new tests run",
+    "Intent": "Optimize for feedback first; rely on refactoring to restore structure.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 16,
+    "Name": "Run Tests Very Often",
+    "Exact Quote": "How often the tests are run",
+    "Intent": "Sustain confidence and pace by keeping the feedback loop tight.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 17,
+    "Name": "Many Tiny Refactor Steps",
+    "Exact Quote": "How many teensy tiny steps make up the refactorings",
+    "Intent": "Prefer frequent, small refactors over rare “big cleanups” that get postponed under deadlines.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 18,
+    "Name": "Start Small",
+    "Exact Quote": "Start small or not at all.",
+    "Intent": "Lower the activation energy; start with the simplest case to avoid stalling or overbuilding.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 19,
+    "Name": "Design the Best API First",
+    "Exact Quote": "When we write a test, we imagine the perfect interface for our operation.",
+    "Intent": "Use tests to shape the public interface from the user’s perspective, before committing internals.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 20,
+    "Name": "Tests as an Outside-In Story",
+    "Exact Quote": "We are telling ourselves a story about how the operation will look from the outside.",
+    "Intent": "Keep focus on observable behavior and usage, not internal mechanisms.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 21,
+    "Name": "No Human Judgment in Results",
+    "Exact Quote": "every bit of human judgment has to be taken out of the evaluation of the results.",
+    "Intent": "Make tests unambiguous so teams don’t rationalize failures under pressure.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 22,
+    "Name": "Assert Specifically",
+    "Exact Quote": "Be specific--assertNotNull(result) can be satisfied by almost any code.",
+    "Intent": "Prevent weak tests that “go green” without pinning down behavior.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 23,
+    "Name": "Fake It to Regain Motion",
+    "Exact Quote": "I write the first test, I make it work some ugly way",
+    "Intent": "Allow temporary hard-coding to restore progress, then tighten with more tests and refactoring.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 24,
+    "Name": "Eliminate Test↔Code Duplication",
+    "Exact Quote": "There is duplication between the test and the code.",
+    "Intent": "Treat duplicated knowledge across tests and code as coupling; remove it to keep changes cheap.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 25,
+    "Name": "Triangulate: Abstract Only with Multiple Examples",
+    "Exact Quote": "Only abstract when you have two or more examples.",
+    "Intent": "Avoid premature generalization; let repeated evidence force abstraction.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 26,
+    "Name": "TDD Manages Fear",
+    "Exact Quote": "Test-driven development (TDD) is a way of managing fear during programming.",
+    "Intent": "Use fast feedback to keep risk and anxiety from driving big-bang decisions.",
+    "Source with Author name": "Kent Beck — Test-Driven Development by Example",
+    "URL": "https://www2.cs.uh.edu/~rsingh/documents/software_design/TDD.pdf"
+  },
+  {
+    "Sr.": 27,
+    "Name": "Nano-Cycle Granularity",
+    "Exact Quote": "The three laws are the nano-cycle of TDD.",
+    "Intent": "Keep work at near line-by-line scale so “just a bit more code” doesn’t balloon under deadlines.",
+    "Source with Author name": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
+    "URL": "https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html"
+  },
+  {
+    "Sr.": 28,
+    "Name": "3 Laws: Failing Test First",
+    "Exact Quote": "You must write a failing test before you write any production code.",
+    "Intent": "Force demand-driven coding; prevent speculative implementation when time feels tight.",
+    "Source with Author name": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
+    "URL": "https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html"
+  },
+  {
+    "Sr.": 29,
+    "Name": "3 Laws: Minimal Test",
+    "Exact Quote": "You must not write more of a test than is sufficient to fail, or fail to compile.",
+    "Intent": "Avoid over-specifying behavior early; keep the next step small and focused.",
+    "Source with Author name": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
+    "URL": "https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html"
+  },
+  {
+    "Sr.": 30,
+    "Name": "3 Laws: Minimal Production Code",
+    "Exact Quote": "You must not write more production code than is sufficient to make the currently failing test pass.",
+    "Intent": "Prevent “extra” implementation that becomes brittle and expensive to maintain.",
+    "Source with Author name": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
+    "URL": "https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html"
+  },
+  {
+    "Sr.": 31,
+    "Name": "Micro-Cycle: Fail → Pass → Clean",
+    "Exact Quote": "Clean up the mess you just made.",
+    "Intent": "Treat cleanup as part of the cycle so structure doesn’t degrade when delivery pressure rises.",
+    "Source with Author name": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
+    "URL": "https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html"
+  },
+  {
+    "Sr.": 32,
+    "Name": "Refactor Continuously (Not Later)",
+    "Exact Quote": "Refactoring is a continuous in-process activity, not something that is done late (and therefore optionally).",
+    "Intent": "Block the common failure mode: postponing refactoring until it never happens.",
+    "Source with Author name": "Robert C. Martin — The Cycles of TDD (Clean Coder Blog)",
+    "URL": "https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html"
+  },
+  {
+    "Sr.": 33,
+    "Name": "FIRST: Test Quality Constraints",
+    "Exact Quote": "Tests should be Fast, Independent, Repeatable, Self-Validating, and Timely.",
+    "Intent": "Make the test suite runnable and trustworthy enough that teams keep using it under time pressure.",
+    "Source with Author name": "Robert C. Martin — Clean Code (excerpted/quoted)",
+    "URL": "https://docs.miva.com/code-standards/topics/clean-code/"
+  },
+  {
+    "Sr.": 34,
+    "Name": "Test Code Is First-Class",
+    "Exact Quote": "Test code is just as important as production code.",
+    "Intent": "Keep tests maintainable so they don’t become a drag and get skipped during delivery crunches.",
+    "Source with Author name": "Robert C. Martin — quoted in Tyler Hawkins (Better Programming, Medium)",
+    "URL": "https://medium.com/better-programming/clean-code-with-unit-tests-5f28020828a5"
+  }
+]
